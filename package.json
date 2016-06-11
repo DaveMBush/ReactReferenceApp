@@ -1,0 +1,79 @@
+{
+  "name": "react-reference-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "dmb",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-jest": "^12.1.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-runtime": "^6.9.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "flux": "^2.1.1",
+    "gulp": "^3.9.1",
+    "gulp-tap": "^0.1.3",
+    "gulp-util": "^3.0.7",
+    "jest-cli": "^12.1.1",
+    "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
+    "superagent": "^2.0.0",
+    "superagent-mock": "^1.10.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "./node_modules/babel-jest",
+    "collectCoverage": true,
+    "collectCoverageOnlyFrom": {
+      "www/app/actions/crudActions.js": true,
+      "www/app/constants/actionTypes.js": true,
+      "www/app/dispatcher/appDispatcher.js": true,
+      "www/app/jsx/view/tableBody.jsx.js": true,
+      "www/app/jsx/view/tableHead.jsx.js": true,
+      "www/app/jsx/view/tableRow.jsx.js": true,
+      "www/app/jsx/view/view.jsx.js": true,
+      "www/app/jsx/view/viewController.jsx.js": true,
+      "www/app/jsx/appRoutes.jsx.js": true,
+      "www/app/jsx/edit/edit.jsx.js": true,
+      "www/app/jsx/edit/editController.jsx.js": true,
+      "www/app/jsx/edit/components/cancelButton.jsx.js": true,
+      "www/app/jsx/edit/components/dropdownField.jsx.js": true,
+      "www/app/jsx/edit/components/textField.jsx.js": true,
+      "www/app/jsx/edit/components/saveButton.jsx.js": true,
+      "www/app/stores/crudStore.js": true
+    },
+    "unmockedModulePathPatterns": [
+      "./node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "globals": {
+      "__DEV__": true
+    }
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ],
+    "comments": true,
+    "compact": false,
+    "plugins": ["transform-runtime"]
+  }
+}
