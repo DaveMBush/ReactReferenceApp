@@ -18,6 +18,7 @@ class EditController extends React.Component{
         this.onChange = this.onChange.bind(this);
         this.onNameChange = this.onNameChange.bind(this);
         this.onDobChange = this.onDobChange.bind(this);
+        this.onSexChange = this.onSexChange.bind(this);
         this.onSaveClick = this.onSaveClick.bind(this);
         this.onCancelClick = this.onCancelClick.bind(this);
         this.editMode = props.params.id === -1 ? 'add' : 'edit';
