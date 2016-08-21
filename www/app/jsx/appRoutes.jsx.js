@@ -13,8 +13,8 @@ class AppRoutes extends React.Component{
     render() {
         return (
             <Router history={this.history} basename='/'>
-                <Route path="/" component={ViewController} />
-                <Route path="/edit(/:id)" component={EditController}/>
+                <Route path="/" component={ViewController} history={this.history}/>
+                <Route path="/edit(/:id)" component={EditController} history={this.history}/>
             </Router>
         );
     }

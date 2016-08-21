@@ -7,7 +7,7 @@ class TextField extends React.Component{
     }
     render() {
         return (
-            <div class="form-group">
+            <div className="form-group">
                 <label htmlFor={this.props.name} className="col-lg-3 control-label">{this.props.label}</label>
                 <div className="col-lg-9">
                     <input type='text' id={this.props.name} value={this.props.value} placeholder={this.props.placeholder} className="form-control" onChange={this.props.onChange}/>

@@ -15,7 +15,7 @@ class DropDownField extends React.Component{
             )
         });
         return (
-            <div class="form-group">
+            <div className="form-group">
                 <label htmlFor={this.props.name} className="col-lg-3 control-label">{this.props.label}</label>
                 <div className="col-lg-9">
                     <select id={this.props.name} value={this.props.value} className="form-control" onChange={this.props.onChange}>

@@ -16,9 +16,9 @@ jest.unmock('../../../../../www/app/jsx/view/viewController.jsx.js');
 
 describe('tests/www/app/jsx/view/viewController.jsx.spec.js',()=>{
     beforeEach(()=>{
-        ViewController.contextTypes = {
-            router: function(){return browserHistory}
-        };
+        // ViewController.contextTypes = {
+        //     router: function(){return browserHistory}
+        // };
     });
     describe('rendering the ViewController',()=>{
         var viewController;
@@ -27,7 +27,7 @@ describe('tests/www/app/jsx/view/viewController.jsx.spec.js',()=>{
             // keep it from loading data
             spyOn(ViewController.prototype,'componentWillMount').and.returnValue(null);
 
-            var renderedComponent = TestUtils.renderIntoDocument(<ViewController  />);
+            var renderedComponent = TestUtils.renderIntoDocument(<ViewController />);
             viewController = ReactDOM.findDOMNode(renderedComponent);
         });
         it('should render the view controller',()=>{
