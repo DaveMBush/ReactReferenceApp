@@ -40,6 +40,7 @@
   "jest": {
     "scriptPreprocessor": "./node_modules/babel-jest",
     "collectCoverage": true,
+    "cacheDirectory": "./.cache",
     "testPathIgnorePatterns": ["/node_modules/", "/stores/superAgentMockConfig.js"],
     "collectCoverageOnlyFrom": {
       "www/app/actions/crudActions.js": true,

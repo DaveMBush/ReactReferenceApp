@@ -14,9 +14,10 @@ jest.unmock('../../../../../www/app/jsx/edit/editController.jsx.js');
 
 describe('tests/www/js/edit/editController.jsx.spec.js',()=>{
     beforeEach(()=>{
-        // EditController.contextTypes = {
-        //     router: function(){return browserHistory}
-        // };
+        EditController.prototype.context = {
+            router: browserHistory
+        };
+        EditController.contextTypes = {};
     });
     // mock context types
     describe('Rendering the EditController with id undefined',()=>{
